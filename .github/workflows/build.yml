@@ -72,7 +72,7 @@ jobs:
       - name: Create archives
         run: |
           mkdir release
-          for arch in Linux Windows macOS; do
+          for arch in Linux Windows macOS ARM64; do
             zip -qq -r release/Cedserver-$arch-x64.zip artifacts/Server-$arch-X64/
             zip -qq -r release/CentrED-$arch-x64.zip artifacts/CentrED-$arch-X64/
           done
